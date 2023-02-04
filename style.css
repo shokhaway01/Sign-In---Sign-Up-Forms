@@ -247,3 +247,37 @@ form {
 .container.sign-up-mode form.sign-up-form {
     opacity: 1;
 }
+
+@media (max-width:779px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (max-width:635px) {
+    form.sign-up-form {
+        display: none;
+    }
+
+    .container::before {
+        display: none;
+    }
+
+    .panels-container {
+        display: none;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .container.sign-up-mode2 form.sign-up-form {
+        display: flex;
+        opacity: 1;
+    }
+
+    .container.sign-up-mode2 form.sign-in-form {
+        display: none;
+    }
+}
